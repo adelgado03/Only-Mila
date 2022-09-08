@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
 
 // header
-nav {
-    background-color: black;
+#nav-index {
     opacity: 0.8;
+}
+
+.navbar{
+    background-color: black;
+    opacity: 0.9;
     .navbar-brand:hover {
-        transform: scale(1.5);
+        transform: scale(1.3);
         transition-duration: 2s;
     }
     .nav-link {
-        font-weight: bold;
+        font-weight: 400;
         text-transform: uppercase;
-    
+        font-family: 'Oswald', sans-serif;
+        font-size: 22px;
     }
 }
 
@@ -24,7 +29,7 @@ nav {
 
 .contenido-banner {
     font-family: 'Oswald', sans-serif;
-    font-size: 48px;
+    font-size: 65px;
     color: #f2f2f2;
 }
 
@@ -35,7 +40,7 @@ nav {
 .titulo-index {
     background-color: #5a5e5e;
     font-size: 48px;
-    font-variant: small-caps;
+    text-transform: uppercase;
     color: #f2f2f2;
     font-family: 'Oswald', sans-serif;
 }
@@ -76,15 +81,49 @@ nav {
     .envios-texto {
         padding-top: 8px;
         font-family: 'Oswald', sans-serif;
-        margin-bottom:0 ;
+        margin-bottom:0;
     }
     .envios-subtexto {
         font-family: 'Oswald', sans-serif;
         margin-bottom: 1rem;
     }
 }
-
 // Fin envios
+
+.productos{
+    background-color:#f2f2f2;
+    h1{
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        background-color: #9ca1a1;
+    }
+    .tienda{
+        .row{
+        align-items: center;
+        justify-content: center;
+    }
+    }
+    .producto{
+        border: grey 2px solid;
+        width: 200px;
+        text-align: center;
+        background-color:#9ca1a1;
+        img{width: 150px;
+        padding-bottom: 8px;}
+        .precio{
+            font-family: 'Oswald', sans-serif;
+            font-size: 20px;
+            text-align: start;
+            color: black;
+            
+            span{
+                float: right;
+            }
+        }
+    }
+    
+    
+}
 
 // Incio footer
 footer{ 
