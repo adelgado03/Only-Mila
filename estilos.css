@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+nav {
+  background-color: black;
+  opacity: 0.8;
+}
+nav .navbar-brand:hover {
+  transform: scale(1.5);
+  transition-duration: 2s;
+}
+nav .nav-link {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.banner-imagen {
+  background-image: url(multimedia/WhatsApp\ Image\ 2022-08-23\ at\ 11.09.39\ AM.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contenido-banner {
+  font-family: "Oswald", sans-serif;
+  font-size: 48px;
+  color: #f2f2f2;
+}
+
+.titulo-index {
+  background-color: #5a5e5e;
+  font-size: 48px;
+  font-variant: small-caps;
+  color: #f2f2f2;
+  font-family: "Oswald", sans-serif;
+}
+
+.sec-index {
+  background-color: #f2f2f2;
+}
+.sec-index .nos-foto {
+  float: right;
+  height: 550px;
+}
+.sec-index .nos-texto {
+  text-align: justify;
+  padding-top: 20px;
+}
+.sec-index .nos-texto .boton {
+  text-align: center;
+}
+.sec-index .nos-texto .boton .btn {
+  font-variant: small-caps;
+}
+
+.envios {
+  background-color: #9ca1a1;
+  padding: 50px 15px 30px 15px;
+  border-radius: 12px;
+}
+.envios .envios-icono {
+  font-size: 70px;
+}
+.envios .envios-titulo {
+  padding-top: 12px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.envios .envios-texto {
+  padding-top: 8px;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 0;
+}
+.envios .envios-subtexto {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #1d1c1b;
+  color: #f2f2f2;
+}
+footer .titulo-footer {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+}
+footer .footer-icono {
+  padding-right: 8px;
+  font-size: 22px;
+}
+footer a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+footer .vinculos-footer {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+}
+footer .post-footer {
+  background-color: rgba(0, 0, 0, 0);
+}
+footer .post-footer h5 {
+  padding-left: 20px;
+  opacity: 0.7;
+  font-size: 16px;
+  padding-bottom: 8px;
+  margin-bottom: 0px;
+}
+footer .post-footer h5 span {
+  opacity: 0.4;
+}
+footer .post-footer h5 i {
+  padding-right: 4px;
+}
+footer .post-footer h5 a {
+  font-size: 14px;
+}/*# sourceMappingURL=estilos.css.map */
