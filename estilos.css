@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #nav-index {
   opacity: 0.8;
 }
@@ -81,35 +86,108 @@
 }
 
 .productos {
-  background-color: #f2f2f2;
+  background-color: white;
 }
 .productos h1 {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  background-color: #9ca1a1;
+  background-color: white;
 }
-.productos .tienda .row {
+.productos .tienda {
+  background-color: #f2f2f2;
+  padding-top: 12px;
+}
+.productos .tienda .scroll-productos {
+  border: 2px solid #5a5e5e;
+  height: 600px;
+  overflow: scroll;
   align-items: center;
+  --bs-gutter-x: 0;
+}
+.productos .tienda .scroll-productos div {
+  text-align: center;
   justify-content: center;
 }
-.productos .producto {
+.productos .tienda .scroll-productos div .producto {
   border: grey 2px solid;
   width: 200px;
   text-align: center;
   background-color: #9ca1a1;
 }
-.productos .producto img {
+.productos .tienda .scroll-productos div .producto img {
   width: 150px;
   padding-bottom: 8px;
 }
-.productos .producto .precio {
+.productos .tienda .scroll-productos div .producto .precio {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   text-align: start;
   color: black;
 }
-.productos .producto .precio span {
+.productos .tienda .scroll-productos div .producto .precio span {
   float: right;
+}
+.productos .tienda .columna-der {
+  flex-direction: column;
+  align-items: center;
+}
+.productos .tienda .columna-der img {
+  width: 338px;
+  height: 152px;
+  border: solid 5px #1d1c1b;
+  border-radius: 8px;
+}
+.productos .tienda .columna-der h3 {
+  padding-top: 3px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.productos .combos {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.productos .combos h2 {
+  border: grey 2px solid;
+}
+.productos .combos .row {
+  --bs-gutter-x: 0;
+}
+.productos .combos .row .columna-der-abajo {
+  padding-left: 14px;
+  flex-direction: column;
+  align-items: center;
+}
+.productos .combos .row .columna-der-abajo img {
+  height: 250px;
+  width: 280px;
+  border: solid 5px #1d1c1b;
+  border-radius: 8px;
+}
+.productos .combos .row .columna-der-abajo h3 {
+  padding-top: 3px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.productos .combos .row div {
+  justify-content: center;
+}
+.productos .combos .row div .producto {
+  background-color: #9ca1a1;
+  border: red 2px solid;
+  width: 200px;
+}
+.productos .combos .row div .producto h4 {
+  font-size: 26px;
+}
+.productos .combos .row div .producto .kilo {
+  padding-left: 14px;
+}
+.productos .combos .row div .producto .precio {
+  text-align: center;
+}
+.productos .combos .row div .producto .llevas {
+  font-size: 12px;
+  text-align: center;
 }
 
 footer {

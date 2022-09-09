@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 // header
 #nav-index {
     opacity: 0.8;
 }
 
-.navbar{
+.navbar {
     background-color: black;
     opacity: 0.9;
+
     .navbar-brand:hover {
         transform: scale(1.3);
         transition-duration: 2s;
     }
+
     .nav-link {
         font-weight: 400;
         text-transform: uppercase;
@@ -47,22 +54,27 @@
 
 .sec-index {
     background-color: #f2f2f2;
+
     .nos-foto {
         float: right;
         height: 550px;
     }
+
     .nos-texto {
         text-align: justify;
         padding-top: 20px;
+
         .boton {
             text-align: center;
+
             .btn {
                 font-variant: small-caps;
             }
         }
     }
-    
+
 }
+
 // Fin index+nos
 
 // Inicio envios
@@ -70,117 +82,193 @@
     background-color: #9ca1a1;
     padding: 50px 15px 30px 15px;
     border-radius: 12px;
-    .envios-icono{
+
+    .envios-icono {
         font-size: 70px;
     }
-    .envios-titulo{
+
+    .envios-titulo {
         padding-top: 12px;
         text-transform: uppercase;
         font-family: 'Oswald', sans-serif;
     }
+
     .envios-texto {
         padding-top: 8px;
         font-family: 'Oswald', sans-serif;
-        margin-bottom:0;
+        margin-bottom: 0;
     }
+
     .envios-subtexto {
         font-family: 'Oswald', sans-serif;
         margin-bottom: 1rem;
     }
 }
+
 // Fin envios
 
-.productos{
-    background-color:#f2f2f2;
-    h1{
+.productos {
+    background-color: white;
+    
+    h1 {
         font-family: 'Oswald', sans-serif;
         text-transform: uppercase;
-        background-color: #9ca1a1;
+        background-color: white;
     }
-    .tienda{
-        .row{
-        align-items: center;
-        justify-content: center;
-    }
-    }
-    .producto{
-        border: grey 2px solid;
-        width: 200px;
-        text-align: center;
-        background-color:#9ca1a1;
-        img{width: 150px;
-        padding-bottom: 8px;}
-        .precio{
-            font-family: 'Oswald', sans-serif;
-            font-size: 20px;
-            text-align: start;
-            color: black;
-            
-            span{
-                float: right;
+    .tienda {
+        background-color: #f2f2f2;
+        padding-top: 12px;
+        .scroll-productos {
+            border: 2px solid #5a5e5e;
+            height: 600px;
+            overflow: scroll;
+            align-items: center;
+            --bs-gutter-x: 0;
+            div {
+                text-align: center;
+                justify-content: center;
+                .producto {
+                    border: grey 2px solid;
+                    width: 200px;
+                    text-align: center;
+                    background-color: #9ca1a1;
+                    img {
+                        width: 150px;
+                        padding-bottom: 8px;
+                    }
+                    .precio {
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 20px;
+                        text-align: start;
+                        color: black;
+                        span {
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+        .columna-der {
+            flex-direction: column;
+            align-items: center;
+            img {
+                width: 338px;
+                height: 152px;
+                border: solid 5px #1d1c1b;
+                border-radius: 8px;
+            }
+            h3 {
+                padding-top: 3px;
+                text-transform: uppercase;
+                font-family: 'Oswald', sans-serif;
             }
         }
     }
-    
-    
+    .combos {
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        h2{border: grey 2px solid;}
+        
+        .row {
+            --bs-gutter-x: 0;
+                .columna-der-abajo {
+                    padding-left: 14px;
+                    flex-direction: column;
+                    align-items: center;
+                    img {
+                        height: 250px;
+                        width: 280px;
+                        border: solid 5px #1d1c1b;
+                        border-radius: 8px;
+                    }
+                    h3 {
+                        padding-top: 3px;
+                        text-transform: uppercase;
+                        font-family: 'Oswald', sans-serif;
+                    }
+                }
+            div {
+                justify-content: center;
+                .producto {
+                    background-color: #9ca1a1;
+                    border: red 2px solid;
+                    width: 200px;
+                    h4 {
+                        font-size: 26px;
+                    }
+                    .kilo{
+                        padding-left: 14px;
+                    }
+                    .precio {
+                        text-align: center;
+                    }
+                    .llevas {
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
 }
 
 // Incio footer
-footer{ 
+footer {
     background-color: #1d1c1b;
     color: #f2f2f2;
-    .titulo-footer{
+
+    .titulo-footer {
         font-family: 'Oswald', sans-serif;
         font-size: 28px;
     }
-    .footer-icono{
+
+    .footer-icono {
         padding-right: 8px;
         font-size: 22px;
-        
+
     }
-    a{
+
+    a {
         text-decoration: none;
-        color:#f2f2f2;
+        color: #f2f2f2;
     }
-    .vinculos-footer{
+
+    .vinculos-footer {
         text-decoration: none;
-        color:#f2f2f2;
+        color: #f2f2f2;
         font-family: 'Oswald', sans-serif;
         text-transform: uppercase;
         font-size: 20px;
         font-weight: 300;
     }
-    .post-footer{
+
+    .post-footer {
         background-color: #0000;
-        h5{
+
+        h5 {
             padding-left: 20px;
             opacity: 0.7;
             font-size: 16px;
             padding-bottom: 8px;
             margin-bottom: 0px;
-            span{
+
+            span {
                 opacity: 0.4;
             }
-            i{ padding-right: 4px;}
-            a{
+
+            i {
+                padding-right: 4px;
+            }
+
+            a {
                 font-size: 14px;
             }
         }
     }
 }
+
 // Fin footer
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
