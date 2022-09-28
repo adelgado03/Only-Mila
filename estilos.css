@@ -175,19 +175,83 @@
   background-color: #9ca1a1;
   border: red 2px solid;
   width: 200px;
+  justify-content: space-between;
 }
 .productos .combos .row div .producto h4 {
   font-size: 26px;
 }
+.productos .combos .row div .producto p {
+  margin-bottom: 0;
+}
 .productos .combos .row div .producto .kilo {
+  font-size: 16px;
   padding-left: 14px;
 }
 .productos .combos .row div .producto .precio {
   text-align: center;
+  align-items: flex-end;
 }
 .productos .combos .row div .producto .llevas {
   font-size: 12px;
   text-align: center;
+}
+
+.mayoristas h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+}
+.mayoristas section {
+  align-items: center;
+}
+.mayoristas section .lista li {
+  font-family: "Oswald", sans-serif;
+  font-variant: small-caps;
+  font-size: 28px;
+  padding-bottom: 12px;
+}
+.mayoristas section .foto img {
+  width: 450px;
+}
+.mayoristas .nosotros {
+  padding-bottom: 1rem;
+}
+.mayoristas .nosotros h2 {
+  font-family: "Oswald", sans-serif;
+  font-variant: small-caps;
+  font-size: 46px;
+}
+
+.contacto {
+  background-color: #f2f2f2;
+}
+.contacto h1 {
+  color: #5a5e5e;
+  font-family: "Oswald", sans-serif;
+  font-variant: small-caps;
+  font-size: 50px;
+}
+.contacto .contenedor-derecho .contacto-box {
+  font-variant: small-caps;
+  font-size: 20px;
+  padding: 12px;
+  color: black;
+  border: 1px solid black;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+.contacto .contenedor-derecho .contacto-box .contacto-titulo {
+  opacity: 0.8;
+}
+.contacto .contenedor-derecho .contacto-box .contacto-titulo p {
+  margin: 0px 0px 6px 0;
+}
+.contacto .contenedor-derecho .contacto-box .contacto-info a {
+  text-decoration: none;
+  color: black;
+}
+.contacto .contenedor-derecho .contacto-box .contacto-info span {
+  color: #1d1c1b;
 }
 
 footer {

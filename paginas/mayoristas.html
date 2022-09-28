@@ -8,16 +8,16 @@
     <title>ONLYMILA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="../estilos.css">
     <script src="https://kit.fontawesome.com/fa55a4f8fb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <!-- navbar inicio -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" id="nav-index">
+        <nav class="navbar navbar-expand-lg navbar-dark p-md-3">
             <div class="container nav-container">
-                <a class="navbar-brand" href="#"><img src="multimedia/logo.png" alt="logo" style="width:120px;"></a>
+                <a class="navbar-brand" href="#"><img src="../multimedia/logo.png" alt="logo" style="width:120px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -26,42 +26,53 @@
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Home</a>
+                            <a class="nav-link text-light" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="paginas/productos.html">Productos</a>
+                            <a class="nav-link text-light" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#envios">Envios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="paginas/mayoristas.html">Mayoristas</a>
+                            <a class="nav-link text-light" href="#">Mayoristas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="paginas/contacto.html">Contacto</a>
+                            <a class="nav-link text-light" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- navbar fin -->
-
-        <!-- Banner Imagen  -->
-        <div class="banner-imagen w-100 vh-100 d-flex justify-content-center align-items-center">
-
-            <div class="text-center">
-                <h1 class="contenido-banner">BIENVENIDOS A ONLY MILA</h1>
-            </div>
-        </div>
     </header>
-    <main>
-        <h2 class="text-center py-4 m-0 titulo-index" id="nosotros">¿quienes somos?</h2>
-        <section class="container-fluid sec-index py-3">
+    <main class="mayoristas">
+        <!-- mayoristas -->
+        <h1 class="text-center py-3">nuestros clientes mayoristas</h1>
+        <section class="container row py-3">
+            <div class="col-xl-3"></div>
+            <div class="lista col-xl-4">
+                <ul>
+                    <li>restaurantes</li>
+                    <li>distribuidores de alimentos</li>
+                    <li>empresas de vianda y catering</li>
+                    <li>tiendas de venta al peso</li>
+                    <li>comedores</li>
+                    <li>cerveceria y bares</li>
+                    <li>carnicerias y granjas</li>
+                    <li>gastronomicos en general</li>
+                </ul>
+            </div>
+            <div class="foto col-xl-4">
+                <img src="../multimedia/carnesss.jpg" alt="" class="aling-items-center">
+            </div>
+        </section>
+        <section class="container-fluid sec-index nosotros" id="nosotros">
             <div class="row">
-                <div class="nleft col-xl-6 col-sm-12"><img src="multimedia/Foto de Alee Delgado.jpg" alt=""
+                <h2 class="text-center py-2">sobre nosotros</h2>
+                <div class="nleft col-xl-6 col-sm-12"><img src="../multimedia/Foto de Alee Delgado.jpg" alt=""
                         class="img-fluid nos-foto "></div>
                 <div class="nright col-xl-3 col-sm-12 nos-texto ">
                     <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum vitae sit, eligendi
@@ -74,7 +85,7 @@
                         reprehenderit voluptatem tenetur voluptatibus provident inventore fugit, temporibus cupiditate
                         eligendi ipsum suscipit laborum, possimus enim illum tempore aspernatur? Reprehenderit nesciunt
                         asperiores ex unde quam, eveniet </p>
-                    <div class="boton"><a href="paginas/productos.html"><button type="button" class="btn btn-dark">ver
+                    <div class="boton"><a href="productos.html"><button type="button" class="btn btn-dark">ver
                                 productos</button></a></div>
                 </div>
             </div>
@@ -101,6 +112,10 @@
                 </div>
             </div>
         </section>
+
+
+
+
     </main>
     <footer>
         <section class="sec-footer container">
@@ -138,23 +153,11 @@
             </div>
         </section>
         <section class="container-fluid post-footer">
-            <h5>2022@ONLYMILA <span>derechos reservados por copyright</span>- creada por <a href="https://www.instagram.com/aleedelgado3/">Alejo Delgado</a> <i class="fa-brands fa-instagram"></i></h5>
+            <h5>2022@ONLYMILA <span>derechos reservados por copyright</span>- creada por <a
+                    href="https://www.instagram.com/aleedelgado3/">Alejo Delgado</a> <i
+                    class="fa-brands fa-instagram"></i></h5>
         </section>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>

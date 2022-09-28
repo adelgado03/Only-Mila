@@ -107,40 +107,48 @@
 
 // Fin envios
 
+// inicio productos
 .productos {
     background-color: white;
-    
+
     h1 {
         font-family: 'Oswald', sans-serif;
         text-transform: uppercase;
         background-color: white;
     }
+
     .tienda {
         background-color: #f2f2f2;
         padding-top: 12px;
+
         .scroll-productos {
             border: 2px solid #5a5e5e;
             height: 600px;
             overflow: scroll;
             align-items: center;
             --bs-gutter-x: 0;
+
             div {
                 text-align: center;
                 justify-content: center;
+
                 .producto {
                     border: grey 2px solid;
                     width: 200px;
                     text-align: center;
                     background-color: #9ca1a1;
+
                     img {
                         width: 150px;
                         padding-bottom: 8px;
                     }
+
                     .precio {
                         font-family: 'Oswald', sans-serif;
                         font-size: 20px;
                         text-align: start;
                         color: black;
+
                         span {
                             float: right;
                         }
@@ -148,15 +156,18 @@
                 }
             }
         }
+
         .columna-der {
             flex-direction: column;
             align-items: center;
+
             img {
                 width: 338px;
                 height: 152px;
                 border: solid 5px #1d1c1b;
                 border-radius: 8px;
             }
+
             h3 {
                 padding-top: 3px;
                 text-transform: uppercase;
@@ -164,44 +175,64 @@
             }
         }
     }
+
     .combos {
         text-transform: uppercase;
         font-family: 'Oswald', sans-serif;
-        h2{border: grey 2px solid;}
-        
+
+        h2 {
+            border: grey 2px solid;
+        }
+
         .row {
             --bs-gutter-x: 0;
-                .columna-der-abajo {
-                    padding-left: 14px;
-                    flex-direction: column;
-                    align-items: center;
-                    img {
-                        height: 250px;
-                        width: 280px;
-                        border: solid 5px #1d1c1b;
-                        border-radius: 8px;
-                    }
-                    h3 {
-                        padding-top: 3px;
-                        text-transform: uppercase;
-                        font-family: 'Oswald', sans-serif;
-                    }
+
+            .columna-der-abajo {
+                padding-left: 14px;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    height: 250px;
+                    width: 280px;
+                    border: solid 5px #1d1c1b;
+                    border-radius: 8px;
                 }
+
+                h3 {
+                    padding-top: 3px;
+                    text-transform: uppercase;
+                    font-family: 'Oswald', sans-serif;
+                }
+            }
+
             div {
                 justify-content: center;
+
                 .producto {
                     background-color: #9ca1a1;
                     border: red 2px solid;
                     width: 200px;
+                    justify-content: space-between;
+
                     h4 {
                         font-size: 26px;
                     }
-                    .kilo{
+
+                    p{
+                        margin-bottom: 0;
+                    }
+
+                    .kilo {
+                        font-size: 16px;
                         padding-left: 14px;
                     }
+
                     .precio {
                         text-align: center;
+                        align-items: flex-end;
                     }
+
                     .llevas {
                         font-size: 12px;
                         text-align: center;
@@ -214,6 +245,89 @@
 
 
 
+}
+
+// fin productos
+
+// inicio mayoristas
+.mayoristas {
+    h1 {
+        font-size: 38px;
+        text-transform: uppercase;
+        background-color: #f2f2f2;
+    }
+
+    section {
+        align-items: center;
+
+        .lista {
+            li {
+                font-family: 'Oswald', sans-serif;
+                font-variant: small-caps;
+                font-size: 28px;
+                padding-bottom: 12px;
+            }
+
+        }
+
+        .foto {
+            img {
+                width: 450px;
+            }
+
+        }
+    }
+
+    .nosotros {
+        padding-bottom: 1rem;
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            font-variant: small-caps;
+            font-size: 46px;
+        }
+    }
+
+
+}
+
+// fin mayoristas
+
+// inicio contacto
+.contacto {
+    background-color: #f2f2f2;
+    h1 {
+        color:#5a5e5e;
+        font-family: 'Oswald', sans-serif;
+        font-variant: small-caps;
+        font-size: 50px
+    }
+
+    .contenedor-derecho {
+
+        .contacto-box {
+            font-variant: small-caps;
+            font-size: 20px;
+            padding: 12px;
+            color:black;
+            border: 1px solid black;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            .contacto-titulo{
+                opacity: 0.8;
+                p{
+                    margin: 0px 0px 6px 0;
+                }
+            }
+            .contacto-info{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                span{color: #1d1c1b;}
+            }
+        }
+    }
 }
 
 // Incio footer
